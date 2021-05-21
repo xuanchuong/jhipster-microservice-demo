@@ -1,13 +1,11 @@
 package com.xuanchuongdp.jhipster.microservice.demo.config;
 
-import com.xuanchuongdp.jhipster.microservice.demo.security.*;
-import com.xuanchuongdp.jhipster.microservice.demo.security.jwt.*;
-import org.springframework.context.annotation.Bean;
+import com.xuanchuongdp.jhipster.microservice.demo.security.AuthoritiesConstants;
+import com.xuanchuongdp.jhipster.microservice.demo.security.jwt.JWTConfigurer;
+import com.xuanchuongdp.jhipster.microservice.demo.security.jwt.TokenProvider;
 import org.springframework.context.annotation.Import;
-import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;

@@ -80,7 +80,7 @@ eclipse {
 defaultTasks "bootRun"
 
 springBoot {
-    mainClassName = "com.xuanchuongdp.jhipster.microservice.demo.JhipsterdemoApp"
+    mainClassName = "com.xuanchuongdp.jhipster.microservice.demo.JhipsterDemoApp"
 }
 
 test {

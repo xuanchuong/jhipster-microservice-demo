@@ -1,10 +1,11 @@
 package com.xuanchuongdp.jhipster.microservice.demo.web.rest.errors;
 
+import org.zalando.problem.AbstractThrowableProblem;
+import org.zalando.problem.Status;
+
 import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
-import org.zalando.problem.AbstractThrowableProblem;
-import org.zalando.problem.Status;
 
 public class BadRequestAlertException extends AbstractThrowableProblem {
 
@@ -13,10 +14,6 @@ public class BadRequestAlertException extends AbstractThrowableProblem {
     private final String entityName;
 
     private final String errorKey;
-
-    public BadRequestAlertException(String defaultMessage, String entityName, String errorKey) {
-        this(ErrorConstants.DEFAULT_TYPE, defaultMessage, entityName, errorKey);
-    }
 
     public BadRequestAlertException(URI type, String defaultMessage, String entityName, String errorKey) {
         super(type, defaultMessage, Status.BAD_REQUEST, null, null, null, getAlertParameters(entityName, errorKey));

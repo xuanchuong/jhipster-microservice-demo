@@ -1,4 +1,4 @@
-# jhipsterdemo
+# jhipster demo
 
 This application was generated using JHipster 7.0.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v7.0.1](https://www.jhipster.tech/documentation-archive/v7.0.1).
 
@@ -10,6 +10,8 @@ This application is configured for Service Discovery and Configuration with the 
 To start your application in the dev profile, run:
 
 ```
+docker-compose -f src/main/docker/jhipster-registry.yml up -d
+
 ./gradlew
 ```
 
@@ -19,7 +21,7 @@ For further instructions on how to develop with JHipster, have a look at [Using 
 
 ### Packaging as jar
 
-To build the final jar and optimize the jhipsterdemo application for production, run:
+To build the final jar and optimize the jhipster demo application for production, run:
 
 ```
 ./gradlew -Pprod clean bootJar
@@ -75,7 +77,7 @@ For more information, refer to the [Code quality page][].
 
 You can use Docker to improve your JHipster development experience. A number of docker-compose configuration are available in the [src/main/docker](src/main/docker) folder to launch required third party services.
 
-You can also fully dockerize your application and all the services that it depends on.
+You can also fully docker size your application and all the services that it depends on.
 To achieve this, first build a docker image of your app by running:
 
 ```
